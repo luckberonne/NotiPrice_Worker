@@ -4,10 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NotiPrice_Worker.Services
+public interface IWebScrapingService
 {
-    public interface IWebScrapingService
-    {
-        Task<string> GetPriceAsync(CancellationToken cancellationToken);
-    }
+    Task<string> GetPriceAsync(CancellationToken cancellationToken);
 }

@@ -1,8 +1,3 @@
-using NotiPrice_Worker;
-using NotiPrice_Worker.Services;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-
 var builder = Host.CreateApplicationBuilder(args);
 
 builder.Services.AddHttpClient<IWebScrapingService, WebScrapingService>();
